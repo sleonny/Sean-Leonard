@@ -1,18 +1,21 @@
 * {
-  background-color: rgb(167, 30, 62);
+  background-color: rgb(101, 86, 89);
 }
 
 
 nav {
 flex: content;
-height: 150px;
-background-color: rgb(167, 30, 62);
+height: 75x;
+background-color: rgb(101, 86, 89);
 color: white;
 font-size: 20px;
 }
 
+nav li {
+  display: inline-block;
+  }
 
-ul { display: flex;
+  nav ul { display: flex;
 justify-content: space-between;
 list-style: none;
 margin: 10%;
@@ -20,9 +23,7 @@ padding: 0;
 }
 
 
-li {
-display: inline-block;
-}
+
 @font-face {
 font-family: 'Sean';
 src: url('assets/fonts/Sean-Regular.ttf');
@@ -97,6 +98,7 @@ font-family: 'Sean', sans-serif
   margin: 0 auto;
 }
 
+
 .grid {
    display: grid;
    grid-template-columns: repeat(2, 2fr);
@@ -119,10 +121,10 @@ footer {
 }
 
 .list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
   flex-direction: column;
   align-items: center;
   
@@ -133,5 +135,53 @@ footer {
   margin: 10px 0;
   text-align: center;
 
-}          
+}       
 
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;;
+  }
+  
+  nav li {
+    margin-bottom: 10px;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+  .about header {
+    margin-bottom: 20px;
+  }
+  header {width: 100%;}
+}
+
+@media screen and (max-width: 768px) {
+  .box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .list-item {
+    margin-bottom: 10px;
+  }
+
+  img {display: flex;
+  width: 100%;}
+}
