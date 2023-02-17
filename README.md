@@ -18,9 +18,9 @@ Finally I added a pseudo-element to make the first project img to grow a little 
 over.  I then commented out the code so that other developers are able to see my thought process
 or I can understand at a later time what I was thinking.  
 
-##Link
+## Link
 
-
+https://sleonny.github.io/Sean-Leonard/
 
 ## Screenshot
 
