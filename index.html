@@ -1,86 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Sean Leonard</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+
+<head>
+  <title>Sean Leonard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<!--The head sets the title, charachter set and links to the stylesheet-->
+
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#About"> About Me</a></li>
+      <li><a href="#Study Guide">Study Guide</a></li>
+      <li><a href="#Accessibility">Refactoring for Accessibility</a></li>
+      <li><a href="#CSS">CSS Styling Cheat Snippets</a></li>
+      <li><a href="#Coming soon">More to Come...!</a></li>
+      <li><a href="#Contact Info">Contact Info</a></li>
+    </ul>
+  </nav>
+
+  <!--The navigation bar has id's that link to the section to make them links to sections on the page-->
+
+  <section id=About class="about">
     
+    <header>Howdy! My name is Sean and I currently am a student of a full stack web development bootcamp.
+      My mid-life crisis turned out to be a career change and I am loving everything so far about web
+      development. "So far" is only HTML, CSS & a little bit of Javascript, however the road ahead looks
+      amazing and could it be you hiring me I see at the end of it? I certainly hope so and very much look
+      forward to meeting you and discussing how I could be an asset to your company. If you're thinking
+      I may not be a good fit for a job but look like a fun and interesting guy, you're right! My go to fun fact
+      about myself is that I was born on Christmas Day so the Santa in the picture isn't all that random.
+      If you were compelled to you could find me in my spare time watching a European soccer game with my wife and
+      two dogs possibly planning our next trip somewhere in the world, tinkering with things
+      I don't understand out in the garage or lately just playing around with Chrome devtools to see what
+      all is possible.
+    </header>
+
+    <img src="css/photos/usa.jpg" alt="sean celebrating qatar 2022">
+
+  </section>
+
+  <!--This section was a header.  I had to put it within a section rather than just header in order to get the photo how I wanted-->
+  
+  <section>
     
-    <body>
-        
-      <nav>
-        <ul>
-          <li><a href="#Study Guide">Study Guide</a></li>
-          <li><a href="#Accessibility">Refactoring for Accessibility</a></li>
-          <li><a href="#CSS">CSS Styling Cheat Codes</a></li>
-          <li><a href="#Coming soon">More to Come...!</a></li>
-        </ul>
-      </nav>
-
-      <section class="about">
-        <header>Howdy!  My name is Sean and I currently am a student of a full stack web development bootcamp.
-         My mid-life crisis turned out to be a career change and I am loving everything so far about web
-         development.  "So far" is only HTML, CSS & a little bit of Javascript however the road ahead looks 
-         amazing and could it be you hiring me I see at the end of it?  I certainly hope so and very much look
-         forward to meeting you and discussing how I could be an asset to your company.  If you're thinking
-         I may not be a good fit for a job but look like a fun and interesting guy, you're right!  My go to fun fact 
-         about myself is that I was born on Christmas Day so the Santa in the picture doesn't seem so random now huh?  
-         If you were compelled to you could find me in my spare time watching a European soccer game with my wife and 
-         two dogs possibly planning our next trip somewhere in the world, tinkering with things
-         I don't understand out in the garage or lately just playing around with Chrome devtools to see what
-         all is possible.  
-        </header>
-
-        <img src="css/photos/usa.jpg" alt="sean celebrating qatar 2022">
-
-      </section>
+    <div id="Study Guide" class="projects">
       
-      <section>
-        <div id="Study Guide" class="projects">
-          <div class="box-one">
-            <h2>Prework Study Guide</h2>
-            <a href="https://sleonny.github.io/prework-study-guide/">
-            <img src="css/photos/study-guide.png" alt="Sreenshot of Prework Study Guide" class="image2
-            ">
-            </a>
-          </div>
-          
-          <div id="Accessibility" class="box">
-            <h2>Accessibility</h2>
-            <a href="https://sleonny.github.io/Horiseon-Access-Opt/">
-            <img src="css/photos/Horiseon-Screenshot.png" alt="Screenshot of landing page for Horiseon">
-            </a>
-          </div>
-          
-          <div id="CSS" class="box">
-            <h2>CSS Cheat Sheet</h2>
-            <img src="css/photos/placeholder.png" alt="Placeholder image until I polish up my CSS cheat sheet">
-          </div>
-          
-          <div id="Coming soon" class="box">
-            <h2>So Much More to Come</h2>
-            <img src="css/photos/coming soon.jpg" alt="Photo 4">
-          </div>
-        
-        </div>
-      </section>  
-       
-      <footer>
-        <p>Contact Me @</p>
-        <ul class="list">
-          <li class="list-item"><a href="https://www.linkedin.com/in/sean-leonard-23280010b/">LinkedIn</a></li>
-          <li class="list-item"><a href="https://github.com/sleonny">Github</a></li>
-          <li class="list-item"><a href="mailto:leonardmsean@gmail.com">Email</a></li>
-        </ul>
-      </footer>
-            
-            
-            
+      <div class="box-one">
+        <h2>Prework Study Guide</h2>
+        <a href="https://sleonny.github.io/prework-study-guide/">
+          <img src="css/photos/study-guide.png" alt="Sreenshot of Prework Study Guide" class="image2">
+        </a>
+      </div>
 
-        </main>
-        
+      <!--This div has an extra class to set the grid styling-->
+      
+      <div id="Accessibility" class="box">
+        <h2>Accessibility</h2>
+        <a href="https://sleonny.github.io/Horiseon-Access-Opt/">
+          <img src="css/photos/Horiseon-Screenshot.png" alt="Screenshot of landing page for Horiseon">
+        </a>
+      </div>
 
-    </body>
+      <div id="CSS" class="box">
+        <h2>CSS Cheat Sheet</h2>
+        <img src="css/photos/coming soon.jpg" alt="Placeholder image until I polish up my CSS cheat sheet">
+      </div>
+
+      <div id="Coming soon" class="box">
+        <h2>So Much More to Come</h2>
+        <img src="css/photos/coming soon.jpg" alt="Photo 4">
+      </div>
+    
+    </div>
+  
+  </section>
+
+  <footer>
+    <p>Contact Me @</p>
+    <ul id="Contact Info" class="list">
+      <li class="list-item"><a href="https://www.linkedin.com/in/sean-leonard-23280010b/">LinkedIn</a></li>
+      <li class="list-item"><a href="https://github.com/sleonny">Github</a></li>
+      <li class="list-item"><a href="mailto:leonardmsean@gmail.com">Email</a></li>
+    </ul>
+  </footer>
+
+<!--footer with links to outside websites-->
+
+  </main>
+
+</body>
+
 </html>

@@ -1,95 +1,73 @@
 * {
-  background-color: rgb(101, 86, 89);
+  background-color: rgb(80, 77, 77);
 }
 
+/* sets the color of the site to grey*/
 
 nav {
-flex: content;
-height: 75x;
-background-color: rgb(101, 86, 89);
-color: white;
-font-size: 20px;
+  flex: content;
+  height: 75x;
+  background-color: rgb(80, 77, 77);
+  color: white;
+  font-size: 20px;
 }
 
 nav li {
   display: inline-block;
-  }
-
-  nav ul { display: flex;
-justify-content: space-between;
-list-style: none;
-margin: 10%;
-padding: 0;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 10%;
+  padding: 0;
+}
 
+/*makes the nav bar a flex container with grey background and white font.  Also makes the list items flex and spaces them out*/
 
 @font-face {
-font-family: 'Sean';
-src: url('assets/fonts/Sean-Regular.ttf');
-} 
-
-body{
-font-family: 'Sean', sans-serif
+  font-family: 'Sean';
+  src: url('assets/fonts/Sean-Regular.ttf');
 }
 
+body {
+  font-family: 'Sean', sans-serif
+}
+
+/*defines a custom font I uploaded of my handwriting to make the page more personal.  Sets the font for the body*/
+
 .about {
- display:flex;
- justify-content: center;
- flex-wrap: wrap;
- font-size: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 25px;
+}
 
- }
+/*makes the about me paragraph a flex container with wrapped writing */
 
- 
- img {
-   width: 40%;
-   height: 550px;
- }
- 
- header {
+img {
+  width: 40%;
+  height: 550px;
+}
+
+/*only image outside of another element.  Made it take up 50% of page with some padding*/
+
+header {
   width: 50%;
-   padding: 10px;
-   flex-wrap: wrap;
+  padding: 10px;
+  flex-wrap: wrap;
   color: white;
+}
 
-   }
-
-  .projects {
+.projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-
-   }
-
-.box {
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   border-style: solid;
-   border-width: 5px;
-  border-radius: 15px;   
-  padding: 10px;
-              
 }
 
-.box h2 {
-   font-size: 20px;
-}
-
-.box-one {
-  flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   border-style: solid;
-   border-width: 5px;
-  border-radius: 15px;   
-  padding: 10px;}
-
-  .box-one img:hover {
-    transform: scale(1.1);
-  }
+/*Had trouble with this.  Sets first display box as a grid and tells the site how to display it the remaining elements*/
 
 .projects img {
   display: block;
@@ -98,19 +76,39 @@ font-family: 'Sean', sans-serif
   margin: 0 auto;
 }
 
+/*defines how the images are displayed and what size*/
 
-.grid {
-   display: grid;
-   grid-template-columns: repeat(2, 2fr);
-   grid-template-rows: 800px;
-   gap: 40px;
+.box {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 15px;
+  padding: 10px;
 }
 
-.screenshots {
-  width: 85%;
-  height: 85%;
+/*sets the box elements to center all objects in them and defines the box model elements*/
 
+.box h2 {
+  font-size: 20px;
 }
+
+.box-one {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.box-one img:hover {
+  transform: scale(1.1);
+}
+
+/*sets box one apart in order to add the pseudo-element of getting bigger on a hover*/
 
 footer {
   display: flex;
@@ -127,37 +125,37 @@ footer {
   margin: 0;
   flex-direction: column;
   align-items: center;
-  
 }
- 
-          
 .list-item {
   margin: 10px 0;
   text-align: center;
+}
 
-}       
+/*sets the contact info footer element and how it displayed as a list centered*/
 
 @media screen and (max-width: 768px) {
   nav ul {
     display: flex;
-    flex-direction: column;;
-  }
-  
+    flex-direction: column;
+      }
+
   nav li {
     margin-bottom: 10px;
   }
-
-
 }
 
 @media screen and (max-width: 768px) {
   .about {
     flex-direction: column;
   }
+
   .about header {
     margin-bottom: 20px;
   }
-  header {width: 100%;}
+
+  header {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -173,15 +171,21 @@ footer {
     flex-direction: column;
     margin-top: 20px;
   }
+
   .list {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
   }
+
   .list-item {
     margin-bottom: 10px;
   }
 
-  img {display: flex;
-  width: 100%;}
+  img {
+    display: flex;
+    width: 100%;
+  }
 }
+
+/*responsive design for different media devices*/
